@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{888B3F7F-04BF-4882-B27A-3FAC6DBFF4D6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MahjongSolitaire</RootNamespace>
+    <AssemblyName>MahjongSolitaire</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Background.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Background.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tile.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Background.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Background.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="blueback.jpg" />
+    <Content Include="map.txt" />
+    <Content Include="TileRes\tile_1.png" />
+    <Content Include="TileRes\tile_10_highlighted.png" />
+    <Content Include="TileRes\tile_11_highlighted.png" />
+    <Content Include="TileRes\tile_12_highlighted.png" />
+    <Content Include="TileRes\tile_13_highlighted.png" />
+    <Content Include="TileRes\tile_14_highlighted.png" />
+    <Content Include="TileRes\tile_15_highlighted.png" />
+    <Content Include="TileRes\tile_16_highlighted.png" />
+    <Content Include="TileRes\tile_17_highlighted.png" />
+    <Content Include="TileRes\tile_18_highlighted.png" />
+    <Content Include="TileRes\tile_19_highlighted.png" />
+    <Content Include="TileRes\tile_1_highlighted.png" />
+    <Content Include="TileRes\tile_2.png" />
+    <Content Include="TileRes\tile_20_highlighted.png" />
+    <Content Include="TileRes\tile_21_highlighted.png" />
+    <Content Include="TileRes\tile_22_highlighted.png" />
+    <Content Include="TileRes\tile_23_highlighted.png" />
+    <Content Include="TileRes\tile_24_highlighted.png" />
+    <Content Include="TileRes\tile_25_highlighted.png" />
+    <Content Include="TileRes\tile_26_highlighted.png" />
+    <Content Include="TileRes\tile_27_highlighted.png" />
+    <Content Include="TileRes\tile_28_highlighted.png" />
+    <Content Include="TileRes\tile_29_highlighted.png" />
+    <Content Include="TileRes\tile_2_highlighted.png" />
+    <Content Include="TileRes\tile_3.png" />
+    <Content Include="TileRes\tile_30_highlighted.png" />
+    <Content Include="TileRes\tile_31_highlighted.png" />
+    <Content Include="TileRes\tile_32_highlighted.png" />
+    <Content Include="TileRes\tile_33_highlighted.png" />
+    <Content Include="TileRes\tile_34_highlighted.png" />
+    <Content Include="TileRes\tile_35_highlighted.png" />
+    <Content Include="TileRes\tile_36_highlighted.png" />
+    <Content Include="TileRes\tile_37_highlighted.png" />
+    <Content Include="TileRes\tile_38_highlighted.png" />
+    <Content Include="TileRes\tile_39_highlighted.png" />
+    <Content Include="TileRes\tile_3_highlighted.png" />
+    <Content Include="TileRes\tile_4.png" />
+    <Content Include="TileRes\tile_40_highlighted.png" />
+    <Content Include="TileRes\tile_41_highlighted.png" />
+    <Content Include="TileRes\tile_42_highlighted.png" />
+    <Content Include="TileRes\tile_4_highlighted.png" />
+    <Content Include="TileRes\tile_5.png" />
+    <Content Include="TileRes\tile_5_highlighted.png" />
+    <Content Include="TileRes\tile_6.png" />
+    <Content Include="TileRes\tile_6_highlighted.png" />
+    <Content Include="TileRes\tile_7.png" />
+    <Content Include="TileRes\tile_7_highlighted.png" />
+    <Content Include="TileRes\tile_8.png" />
+    <Content Include="TileRes\tile_8_highlighted.png" />
+    <Content Include="TileRes\tile_9.png" />
+    <Content Include="TileRes\tile_10.png" />
+    <Content Include="TileRes\tile_11.png" />
+    <Content Include="TileRes\tile_12.png" />
+    <Content Include="TileRes\tile_13.png" />
+    <Content Include="TileRes\tile_14.png" />
+    <Content Include="TileRes\tile_15.png" />
+    <Content Include="TileRes\tile_16.png" />
+    <Content Include="TileRes\tile_17.png" />
+    <Content Include="TileRes\tile_18.png" />
+    <Content Include="TileRes\tile_19.png" />
+    <Content Include="TileRes\tile_20.png" />
+    <Content Include="TileRes\tile_21.png" />
+    <Content Include="TileRes\tile_22.png" />
+    <Content Include="TileRes\tile_23.png" />
+    <Content Include="TileRes\tile_24.png" />
+    <Content Include="TileRes\tile_25.png" />
+    <Content Include="TileRes\tile_26.png" />
+    <Content Include="TileRes\tile_27.png" />
+    <Content Include="TileRes\tile_28.png" />
+    <Content Include="TileRes\tile_29.png" />
+    <Content Include="TileRes\tile_30.png" />
+    <Content Include="TileRes\tile_31.png" />
+    <Content Include="TileRes\tile_32.png" />
+    <Content Include="TileRes\tile_33.png" />
+    <Content Include="TileRes\tile_34.png" />
+    <Content Include="TileRes\tile_35.png" />
+    <Content Include="TileRes\tile_36.png" />
+    <Content Include="TileRes\tile_37.png" />
+    <Content Include="TileRes\tile_38.png" />
+    <Content Include="TileRes\tile_39.png" />
+    <Content Include="TileRes\tile_40.png" />
+    <Content Include="TileRes\tile_41.png" />
+    <Content Include="TileRes\tile_42.png" />
+    <Content Include="TileRes\tile_9_highlighted.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
